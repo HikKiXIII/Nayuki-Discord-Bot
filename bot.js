@@ -33,31 +33,31 @@ var servers = {};
 ///////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-    if (message.author.bot) return;
-    var iKeywords = ["MARTINEZ","JEROME","PAOUNE",":^)","doit","HAHADON","STABBB","terribleluck","autismpls","shitpost","youdense","autismpls2","goodshit","jesus","fag","fu","fulol","suckitlol","martinez"]
-    var iGifs = ["https://media.giphy.com/media/7597zmlZxhDGg/giphy.gif","https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif","http://imgur.com/qDxuy6K","http://imgur.com/Z49mRUE","http://imgur.com/XhZc8im","http://imgur.com/BuEA7Fk","http://imgur.com/qnXasLA","http://imgur.com/e56uv1K","http://imgur.com/InaUwnU","http://imgur.com/PqBTALa","http://imgur.com/3KAHQZf","http://imgur.com/lYGId7H","https://media.giphy.com/media/1G7SLEIc8vy1O/giphy.gif","https://cdn.discordapp.com/attachments/240660956865101825/325218765346177027/received_10159092994780727.jpeg","https://media.giphy.com/media/xT1XGALdXN5h8F1eiA/giphy.gif","https://media.giphy.com/media/3o6gaQj6VYTJpx2atO/giphy.gif","https://media.giphy.com/media/QzqXexkCcb0Zi/giphy.gif","https://media.giphy.com/media/VVqUUvtKLrxe0/giphy.gif","https://media.giphy.com/media/ifjSDlqc70g7u/giphy.gif"]
-    var messageArray = message.content.split(" ");
-    var message1 = messageArray[0];
+	if (message.author.bot) return;
+	var iKeywords = ["MARTINEZ","JEROME","PAOUNE",":^)","doit","HAHADON","STABBB","terribleluck","autismpls","shitpost","youdense","autismpls2","goodshit","jesus","fag","fu","fulol","suckitlol","martinez"]
+	var iGifs = ["https://media.giphy.com/media/7597zmlZxhDGg/giphy.gif","https://media.giphy.com/media/5Zesu5VPNGJlm/giphy.gif","http://imgur.com/qDxuy6K","http://imgur.com/Z49mRUE","http://imgur.com/XhZc8im","http://imgur.com/BuEA7Fk","http://imgur.com/qnXasLA","http://imgur.com/e56uv1K","http://imgur.com/InaUwnU","http://imgur.com/PqBTALa","http://imgur.com/3KAHQZf","http://imgur.com/lYGId7H","https://media.giphy.com/media/1G7SLEIc8vy1O/giphy.gif","https://cdn.discordapp.com/attachments/240660956865101825/325218765346177027/received_10159092994780727.jpeg","https://media.giphy.com/media/xT1XGALdXN5h8F1eiA/giphy.gif","https://media.giphy.com/media/3o6gaQj6VYTJpx2atO/giphy.gif","https://media.giphy.com/media/QzqXexkCcb0Zi/giphy.gif","https://media.giphy.com/media/VVqUUvtKLrxe0/giphy.gif","https://media.giphy.com/media/ifjSDlqc70g7u/giphy.gif"]
+	var messageArray = message.content.split(" ");
+	var message1 = messageArray[0];
 //		if (message1 === 'gifs') message.channel.send(""+iKeywords+"");
 	if (message1 === '-gifs') {
 		let embed = new Discord.RichEmbed()
-				.setColor("#02eb1d")
+			.setColor("#02eb1d")
 		for (var i = 0; i < iKeywords.length; ++i) {
-				var keywords1 = iKeywords[i];
-				embed.addField(""+i+"",""+keywords1+"");
-				if(i == iKeywords.length-1) message.channel.send({embed: embed});
+			var keywords1 = iKeywords[i];
+			embed.addField(""+i+"",""+keywords1+"");
+			if(i == iKeywords.length-1) message.channel.send({embed: embed});
 		}
-}
-    for (var i = 0; i < iKeywords.length; ++i) {
-        if (message1 === iKeywords[i]) {
-            for (var g = 0; g < iGifs.length; ++g) {
-                if (i == g) {
-                    var link1 = iGifs[g];
-                    message.channel.send(""+link1+"");
-                }
-            }
-        }
-    }
+	}
+	for (var i = 0; i < iKeywords.length; ++i) {
+		if (message1 === iKeywords[i]) {
+			for (var g = 0; g < iGifs.length; ++g) {
+				if (i == g) {
+					var link1 = iGifs[g];
+					message.channel.send(""+link1+"");
+				}
+			}
+		}
+	}
 });
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -66,21 +66,21 @@ bot.on('message', message => {
 
 ///pokemon
 bot.on('message', message => {
-  if (message.content === 'I wanna be the very best') {
-    message.channel.send('https://www.youtube.com/watch?v=zGkcnUy3l-c');
-  }
+	if (message.content === 'I wanna be the very best') {
+	message.channel.send('https://www.youtube.com/watch?v=zGkcnUy3l-c');
+	}
 });
 ///stewzord dead
 bot.on('message', message => {
-  if (message.content === 'STEWZORD') {
-    message.channel.send('He dead jim http://imgur.com/OjieDzz');
-  }
+	if (message.content === 'STEWZORD') {
+	message.channel.send('He dead jim http://imgur.com/OjieDzz');
+	}
 });
 ///My name is cloud
 bot.on('message', message => {
-  if (message.content === "mynameiscloud") {
-    message.channel.send('https://www.youtube.com/watch?v=kbOJkOoJh6Y');
-  }
+	if (message.content === "mynameiscloud") {
+	message.channel.send('https://www.youtube.com/watch?v=kbOJkOoJh6Y');
+	}
 });
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -88,10 +88,10 @@ bot.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////
 
 bot.on('message', message => {
-  if (message.content === 'what is my avatar') {
-		if (message.author.avatarURL == null) message.reply("No Avatar");
-		else message.reply(message.author.avatarURL);
-  }
+	if (message.content === 'what is my avatar') {
+	if (message.author.avatarURL == null) message.reply("No Avatar");
+	else message.reply(message.author.avatarURL);
+	}
 });
 
 ///////////////////////////////////////////////////////////////////////////////
