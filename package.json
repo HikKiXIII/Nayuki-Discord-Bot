@@ -1,0 +1,14 @@
+{
+  "name": "discordbot",
+  "version": "1.0.0",
+  "description": "Discord BOT",
+  "main": "bot.js",
+  "author": "HikKi",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "discord.js-music": "^1.0.3",
+    "opusscript": "0.0.3",
+    "ytdl-core": "^0.14.4"
+  }
+}
