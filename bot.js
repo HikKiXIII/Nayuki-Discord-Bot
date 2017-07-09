@@ -82,7 +82,25 @@ bot.on('message', message => {
 	message.channel.send('https://www.youtube.com/watch?v=kbOJkOoJh6Y');
 	}
 });
-
+///Tenta is a malade mentale
+bot.on('message', message => {
+	if (message.content === "Tenta!") {
+		message.channel.send('Him? He is apparently a "malade mentale"?')
+	}
+});
+///
+bot.on('message', message => {
+	if (message.content === "sup Ney") {
+		message.channel.send('hey sup (message.author.username)')
+	}
+});
+///
+bot.on('message', message => {
+	if (message.content === "What time is it?") {
+		message.channel.send('Time to blaze it')
+	}
+})
+///
 ///////////////////////////////////////////////////////////////////////////////
 ////Show's user avatar/////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
