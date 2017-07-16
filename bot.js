@@ -88,19 +88,30 @@ bot.on('message', message => {
 		message.channel.send('Him? He is apparently a "malade mentale"?')
 	}
 });
-///
+///Sup Nayuki
 bot.on('message', message => {
 	if (message.content === "sup Ney") {
 		message.channel.send('hey sup (message.author.username)')
 	}
 });
-///
+///420 BITCHES
 bot.on('message', message => {
 	if (message.content === "What time is it?") {
 		message.channel.send('Time to blaze it')
 	}
-})
-///
+});
+///sux2bu
+bot.on('message', msssage => {
+	if (message.content === "SUCKS") {
+		message.channel.send('TO BE YOU! :D')
+	}
+});
+///troll 2 2 22
+bot.on('message', message => {
+	if (message.content === "2+2") {
+		message.channel.send('22 voyons caliss..')
+	}
+});
 ///////////////////////////////////////////////////////////////////////////////
 ////Show's user avatar/////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
